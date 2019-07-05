@@ -9,7 +9,7 @@ pipeline {
 	}
 	stage('Build') {
 	    steps {
-		sh '/home/gamut/Distros/apache-maven-3.6.1/bin/mvn install'
+		sh '/opt/maven/maven/bin/mvn install'
 	}
 	    }
 	stage('Deployment') {
