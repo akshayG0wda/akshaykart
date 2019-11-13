@@ -9,12 +9,12 @@ pipeline {
 	}
 	stage('Build') {
 	    steps {
-		sh '/opt/maven/maven/bin/mvn install'
+		sh '/opt/maven/bin/mvn install'
 	}
 	    }
 	stage('Deployment') {
 	    steps {
-		    mv target/gamutkart.war /opt/server/tomcat/webapps/akshaykart.war
+		    mv target/gamutkart.war /opt/apache/webapps/akshaykart.war
 	}
 	}
     }
