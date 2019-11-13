@@ -14,7 +14,7 @@ pipeline {
 	    }
 	stage('Deployment') {
 	    steps {
-		    mv target/gamutkart.war /opt/apache/webapps/akshaykart.war
+		    mv /root/.jenkins/workspace/akshaykart/target/gamutkart.war /opt/apache/webapps/akshaykart.war
 	}
 	}
     }
