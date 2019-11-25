@@ -14,9 +14,8 @@ pipeline {
 	    }
 	stage('Deployment') {
 	    steps {
-		   // mv target/gamutkart.war /opt/apache/webapps/akshaykart.war
-		    rm -rf target
-	}
+		    mv target/gamutkart.war /opt/apache/webapps/akshaykart.war
+		    
 	}
     }
 }
