@@ -14,7 +14,7 @@ pipeline {
 	    }
 	stage('Deployment') {
 	    steps {
-		    mv target/gamutkart.war /pythonAnsible/tomcat/webapps/akshaykart.war
+		    mv /var/lib/jenkins/workspace/devMaster/pipeline e/target/gamutkart.war /pythonAnsible/tomcat/webapps/akshaykart.war
 	    }    
 	}
     }
