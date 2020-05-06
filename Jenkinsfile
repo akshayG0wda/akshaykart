@@ -9,12 +9,12 @@ pipeline {
 	}
 	stage('Build') {
 	    steps {
-		sh '/opt/maven/bin/mvn install'
+		sh '/pythonAnsible/maven/bin/mvn install'
 	}
 	    }
 	stage('Deployment') {
 	    steps {
-		    mv target/gamutkart.war /opt/apache/webapps/akshaykart.war
+		    mv target/gamutkart.war /pythonAnsible/tomcat/webapps/akshaykart.war
 	    }    
 	}
     }
