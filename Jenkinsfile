@@ -22,7 +22,7 @@ pipeline
 		{
 	    		steps 
 			 {
-				sh "chmod 777 /pythonAnsible/tomcat/webapps"
+				sh "sudo chmod 777 /pythonAnsible/tomcat/webapps"
 		    		sh "mv /var/lib/jenkins/workspace/pipe2/target/gamutkart.war /pythonAnsible/tomcat/webapps/"
 			 }    
 		}
