@@ -22,7 +22,7 @@ pipeline
 		{
 	    		steps 
 			 {
-		    		sh "mv /var/lib/jenkins/workspace/devMaster/pipeline_e/target/gamutkart.war /pythonAnsible/tomcat/webapps/"
+		    		sh "mv /var/lib/jenkins/workspace/pipe2/target/gamutkart.war /pythonAnsible/tomcat/webapps/"
 			 }    
 		}
 	}
