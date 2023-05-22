@@ -23,7 +23,7 @@ pipeline
 		{
 	    		steps 
 			 {
-				echo "Akshay"
+				sh echo "Akshay"
 				 //sh "sudo chmod 777 /pythonAnsible/tomcat/webapps"
 		    		//sh "mv /var/lib/jenkins/workspace/pipe2/target/gamutkart.war /pythonAnsible/tomcat/webapps/"
 			 }    
